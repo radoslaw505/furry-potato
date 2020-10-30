@@ -1,0 +1,5 @@
+FROM centos:8
+LABEL maintainer="radoslaw"
+RUN yum makecache
+RUN yum upgrade -y
+RUN yum install -y python3
